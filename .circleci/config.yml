@@ -61,10 +61,10 @@ jobs:
       - run:
           name: Backend build
           command: |
-             # Your code here
-             cd backend
-             npm install
-             npm run build
+           # Your code here
+           cd backend
+           npm install
+           npm run build
       - save_cache:
           paths: [backend/node_modules]
           key: backend-build
